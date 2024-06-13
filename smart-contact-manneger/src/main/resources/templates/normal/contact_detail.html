@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+</head>
+
+<body>
+
+    <section>
+
+        <div class="card me-3 ms-3" th:if="${Contact}">
+            <div class="card-body">
+                <div class="container text-center">
+                    <img src="" style="height: 200px; width: 200px;" class="my_profile_pic"
+                        th:src="@{'/image/'+${Contact.image}}" alt="profile photo">
+                    <h3 class="mt-3"><span th:text="${Contact.name}"></span> ( <span
+                            th:text="${Contact.secondname}"></span> ) </h3>
+
+                    <table class="table table-hover table-success table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">#ID</th>
+                                <th scope="col">SCM 2024 <span th:text="${Contact.cId}"></span></th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td><span th:text="${Contact.email}"></span></td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">Phone No</th>
+                                <td><span th:text="${Contact.phone}"></span></td>
+                            </tr>
+
+
+                            <tr>
+                                <th scope="row">Work</th>
+                                <td><span th:text="${Contact.work}"></span></td>
+                            </tr>
+
+                        </tbody>
+
+
+
+                    </table>
+
+                    <div class="discription mt-5">
+                        <h2 class="mb-5"> Contact description...!</h2>
+                        <th:block th:utext="${Contact.description}"></th:block>
+                    </div>
+
+                    <div class="container mt-5">
+                        <div class="d-grid gap-2 col-3 mx-auto">
+                            <button th:onclick="|deleteContact(${Contact.cId})|" class="btn btn-danger ">Delete</button>
+
+                            <form method="post" th:action="@{'/user/update-contact/'+${Contact.cId}}">
+                                <div class="d-grid gap-2 col-12 mx-auto">
+                                    <button class="btn btn-info">Update</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center p-3 bg-danger text-white me-3 ms-3 " th:unless="${Contact}">You don't have permission to
+            see this Contact Details...!
+
+            <span><i class="fa-solid fa-circle-exclamation fa-shake fa-2xl mt-5 mb-5"></i></span>
+        </h1>
+
+    </section>
+
+</body>
+
+</html>

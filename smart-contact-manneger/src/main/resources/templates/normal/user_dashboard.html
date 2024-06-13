@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+</head>
+<body>
+
+<section>
+
+    <!-- <h1>Welcome you are normal user...!</h1>
+    <h1>This is your private Dashboard...!</h1>
+    <h1>User name <span th:text="${user.name}"></span></h1>
+    <h1>User email <span th:text="${user.email}"></span></h1>
+    <h1><a href="" th:href="@{/logout}">Logout</a></h1> -->
+
+
+    <div class="container">
+        <div class="card">
+            <div class="card-body text-center my-4">
+                <img src="" style="height: 200px; width: 200px;" class="my_profile_pic"
+                th:src="@{'/image/contact_logo.jpg'}" alt="profile photo">
+            </div>
+            <h1 class="text-center mt-3 text-secondary">
+                Start Adding Your Contact On Cloud...!
+            </h1>
+
+            <div class="container text-center mt-3">
+                <h2>User name:- <span th:text="${user.name}"></span></h2>
+                <h2>User email:- <span th:text="${user.email}"></span></h2>
+              </div>
+            <div class="d-grid gap-2 col-4 mx-auto mb-5 mt-3">
+                <a th:href="@{/user/add-contact}" class="btn btn-primary" type="button">Add New Contact</a>
+              </div>
+
+              
+        </div>
+    </div>
+</section>
+   
+</body>
+</html>
