@@ -1,32 +1,33 @@
-Smart Contact Manager
+# Smart Contact Manager
 
 Smart Contact Manager is a comprehensive web application designed to efficiently manage your contacts. This project leverages modern web technologies and robust backend frameworks to provide a seamless and secure user experience.
 
-Features
-Add Contacts: Easily add new contacts with all necessary details.
+## Features
 
-View Contacts: View a list of all contacts with detailed information.
+- **Add Contacts:** Easily add new contacts with all necessary details.
+- **View Contacts:** View a list of all contacts with detailed information.
+- **Edit Contacts:** Update existing contact information effortlessly.
+- **Delete Contacts:** Remove contacts that are no longer needed.
+- **Secure Authentication:** Integrated Spring Security for user authentication and authorization to ensure data privacy.
 
-Edit Contacts: Update existing contact information effortlessly.
+## Technologies Used
 
-Delete Contacts: Remove contacts that are no longer needed.
+### Frontend
+- HTML
+- CSS
+- Bootstrap
 
-Secure Authentication: Integrated Spring Security for user authentication and authorization to ensure data privacy.
-Technologies Used
+### Backend
+- Spring Boot
+- Thymeleaf
 
-Frontend:
-HTML,
-CSS,
-Bootstrap
+### Database
+- MySQL
 
-Backend:
-Spring Boot,
-Thymeleaf
+## Prerequisites
 
-Database:
-MySQL
+- Java Development Kit (JDK)
+- MySQL
+- Maven
 
-Prerequisites:-
-Java Development Kit (JDK),
-MySQL,
-Maven
+Smart Contact Manager combines a user-friendly interface with powerful backend functionality, making contact management simple and efficient.
