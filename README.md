@@ -15,18 +15,18 @@ Secure Authentication: Integrated Spring Security for user authentication and au
 Technologies Used
 
 Frontend:
-HTML
-CSS
+HTML,
+CSS,
 Bootstrap
 
 Backend:
-Spring Boot
+Spring Boot,
 Thymeleaf
 
 Database:
 MySQL
 
-Prerequisites
-Java Development Kit (JDK)
-MySQL
+Prerequisites:-
+Java Development Kit (JDK),
+MySQL,
 Maven
