@@ -41,10 +41,11 @@ Smart Contact Manager combines a user-friendly interface with powerful backend f
 
 - **Home Pages:**
 
+![home](https://github.com/user-attachments/assets/7d8870da-9b91-4a99-ab0d-2626716ba37c)
+
 ![home2](https://github.com/user-attachments/assets/28bd1914-05b4-4f18-b051-c01ce2561806)
 
 
-![home](https://github.com/user-attachments/assets/7d8870da-9b91-4a99-ab0d-2626716ba37c)
 
 
 
