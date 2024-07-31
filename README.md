@@ -1,6 +1,6 @@
-# Smart Contact Manager
+# ContactMaster : Advanced Contact Management
 
-Smart Contact Manager is a comprehensive web application designed to efficiently manage your contacts. This project leverages modern web technologies and robust backend frameworks to provide a seamless and secure user experience.
+ContactMaster : Advanced Contact Management is a comprehensive web application designed to efficiently manage your contacts. This project leverages modern web technologies and robust backend frameworks to provide a seamless and secure user experience.
 
 ## Technologies Used
 
@@ -22,7 +22,7 @@ Smart Contact Manager is a comprehensive web application designed to efficiently
 - MySQL
 - Maven
 
-Smart Contact Manager combines a user-friendly interface with powerful backend functionality, making contact management simple and efficient.
+ContactMaster : Advanced Contact Management combines a user-friendly interface with powerful backend functionality, making contact management simple and efficient.
 
 # Features
 
